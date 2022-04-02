@@ -12,7 +12,7 @@
 #include <ThingsBoard.h>
 
 #define WIFI_AP "ROBOT 2.4G"
-#define WIFI_PASSWORD "81160154ff"
+#define WIFI_PASSWORD "*********"
 
 #define TOKEN "NXW30xCxjlgFqZN8NAaQ"
 
