@@ -1,22 +1,24 @@
+#include <ArduinoJson.h>
 
+#include <Adafruit_Sensor.h>
 
-#include <ArduinoHttpClient.h>
+#include <DHT.h>
+#include <DHT_U.h>
+
+#include <PubSubClient.h>
 
 #include "DHT.h"
 #include <ESP8266WiFi.h>
 #include <ThingsBoard.h>
-#include <ArduinoJson.h>
-#include <PubSubClient.h>
 
-#include <Adafruit_Sensor.h>
 #define WIFI_AP "ROBOT 2.4G"
-#define WIFI_PASSWORD "********"
+#define WIFI_PASSWORD "81160154ff"
 
-#define TOKEN "iXy0oTvoeNxuO0XI2CQF"
+#define TOKEN "NXW30xCxjlgFqZN8NAaQ"
 
 // DHT
 #define DHTPIN D2
-#define DHTTYPE DHT22
+#define DHTTYPE DHT11
 
 char thingsboardServer[] = "demo.thingsboard.io";
 
@@ -45,7 +47,7 @@ void loop()
     reconnect();
   }
 
-  if ( millis() - lastSend > 2000 ) { // Update and send only after 1 seconds
+  if ( millis() - lastSend > 1000 ) { // Update and send only after 1 seconds
     getAndSendTemperatureAndHumidityData();
     lastSend = millis();
   }
