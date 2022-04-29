@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RainTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icone.ico">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="center">
+            <div class="logo">
+                <img src="img/icone.png">
+                <h1>RainTech</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="/">Início</a>
+                    <a href="/pages/sobre.html">Sobre</a>
+                    <a href="/pages/contatos.html">Contatos</a>
+                </ul>
+            </div><!--menu-->
+
+            <div class="btn-menu">
+                <img onclick="btnMenu()" src="img/btn-menu.png">
+            </div><!--btn-menus-->
+        </div><!--center-->
+    </div><!--header-->
+    <div onclick="telaInvisivel()" class="tela-inivisivel"></div>
+    
+    <div class="sessao-principal">
+        <div class="sombra">
+            <div class="centro">
+            <h1>RainTech</h1>
+            <p>Utilizando ciência de dados na previsão de dados meteorológicos.</p>
+            <a href="/pages/sobre.html">Conheça-nos</a>
+            </div><!--centro-->
+        </div><!--sombra-->
+    </div><!--sessao-principal-->
+
+    <div class="sessao-artigos">
+        <div class="centro-2 impa">
+            <div class="esquerdo">
+                <div class="meio">
+                   <h1>O que é ciência de dados?</h1>
+                    <p>A ciência de dados estuda e analisa dados, com o intuito de obter informações importantes,
+                        auxiliar em tomadas de decisão e, até mesmo, <span>detectar padrões</span>.</p> 
+                </div>
+            </div>
+            <div class="direito">
+                <img src="img/linha-do-grafico.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="sessao-artigos w2">
+        <div class="centro-2 par">
+            <div class="esquerdo">
+                <img src="img/strom.png" alt="">
+            </div>
+            <div class="direito">
+                <div class="meio">
+                   <h1>A ligação com dados meteorológicos</h1>
+                    <p>Ao analisar e detectar padrões em dados meteorológicos previamente
+                        obtidos, é possível prever o comportamento dos próximos dados a serem coletados,
+                        ou seja, como o clima estará nas próximas horas ou até mesmo nos próximos dias.
+                    </p> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sessao-artigos">
+        <div class="centro-2 impa">
+            <div class="esquerdo">
+                <div class="meio">
+                   <h1>Nosso trabalho</h1>
+                    <p>Nós da RainTech desenvolvemos um dispositivo que coleta esses dados e realizamos
+                        o trabalho de analisá-los para fornecer a previsão do tempo na cidade de Belém-PA.<br/>
+                        <br/>
+                        Os dados coletados pelo dispositivo estão disponíveis na plataforma Thingsboard, clique no
+                        botão abaixo para acessar.
+                    </p>
+                    <a href="https://demo.thingsboard.io/dashboard/34ffce30-afd4-11ec-a14a-ddee2b216d1b?publicId=536e8070-afcd-11ec-a14a-ddee2b216d1b">Ir para Thingsboard</a>
+                </div>
+            </div>
+            <div class="direito">
+                <img src="img/o-circuito.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <div class="center">
+            <p>Desenvolvido por RainTech</p>
+            <div class="menu">
+                <ul>
+                    <a href="/">Início</a>
+                    <a href="/pages/sobre.html">Sobre</a>
+                    <a href="/pages/contatos.html">Contatos</a>
+                </ul>
+            </div><!--menu-->
+        </div>
+    </div>
+</body>
+</html>
